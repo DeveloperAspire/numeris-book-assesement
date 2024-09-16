@@ -8,7 +8,7 @@ import InvoiceAction from "@/components/fragments/InvoiceAction";
 
 const Invoice = () => {
   return (
-    <div className="px-9 py-4 ">
+    <div className="px-9 py-4 overflow-auto">
       <Header />
 
       <div className="flex items-center justify-between mt-10">
@@ -48,7 +48,7 @@ const Invoice = () => {
       </div>
 
       <div className="mt-10">
-        <h3 className="font-medium text-[28px] text-[##373B47]">
+        <h3 className="font-medium text-[20px] text-[##373B47]">
           Invoice Actions
         </h3>
 
@@ -72,6 +72,36 @@ const Invoice = () => {
           />
         </div>
       </div>
+
+      <section className="flex gap-10">
+        <div className="mt-10 rounded-2xl bg-white p-10 flex-1">
+          <div className="flex items-center justify-between">
+            <h4 className="font-medium text-[20px] text-[##373B47]">
+              Recent Invoices
+            </h4>
+
+            <div className="w-2/6">
+              <Button
+                variant="outline"
+                label="View all invoices"
+                textColor="#003EFF"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-10 rounded-2xl bg-white p-10 flex-1">
+          <div className="flex items-center justify-between">
+            <h4 className="font-medium text-[20px] text-[##373B47]">
+              Recent Activities
+            </h4>
+
+            <div className="w-2/6">
+              <Button variant="outline" label="View all" textColor="#003EFF" />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

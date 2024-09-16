@@ -25,10 +25,12 @@ const Button: React.FC<IButton> = ({
         textColor,
         variantClass[variant],
         className,
-        "h-[68px] w-full rounded-full",
+        "h-[60px] w-full rounded-full",
       ])}
     >
-      <p className="uppercase font-medium tracking-wider">{label}</p>
+      <p className="uppercase font-medium tracking-wider text-[12px]">
+        {label}
+      </p>
     </button>
   );
 };

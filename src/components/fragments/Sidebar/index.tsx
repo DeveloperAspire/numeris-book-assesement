@@ -1,5 +1,5 @@
 const Sidebar = () => {
-  return <div className="w-[280px] bg-white h-screen">gdgg</div>;
+  return <div className="w-[280px] bg-white max-h-full  overflow-auto">gdgg</div>;
 };
 
 export default Sidebar;
