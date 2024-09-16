@@ -3,7 +3,7 @@ import { NotifcationIcon } from "@/assets/icons/NotifcationIcon";
 
 const Header = () => {
   return (
-    <header className="px-9 py-4 flex items-center justify-between w-full border-cyan-400 border-b border-b-[#A1B8FF33]">
+    <header className="py-4 pb-6 flex items-center justify-between w-full border-cyan-400 border-b border-b-[#A1B8FF33]">
       <h3 className="font-medium text-[28px] text-[##373B47] tracking-widest">
         INVOICE
       </h3>
