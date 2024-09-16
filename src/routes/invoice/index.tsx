@@ -5,6 +5,7 @@ import Button from "@/components/common/Button";
 import Header from "@/components/common/Header/Header";
 import AnalyticsCard from "@/components/fragments/AnalyticsCard";
 import InvoiceAction from "@/components/fragments/InvoiceAction";
+import InvoiceListItem from "@/components/fragments/InvoiceListItem";
 
 const Invoice = () => {
   return (
@@ -87,6 +88,24 @@ const Invoice = () => {
                 textColor="#003EFF"
               />
             </div>
+          </div>
+
+          <div>
+            <p className="uppercase text-[12px] font-medium tracking-widest	">
+              today - 27th November, 2022
+            </p>
+
+            <InvoiceListItem />
+            <InvoiceListItem />
+          </div>
+          <div>
+            <p className="uppercase text-[12px] font-medium tracking-widest	">
+              8th december, 2022
+            </p>
+
+            <InvoiceListItem />
+            <InvoiceListItem />
+            <InvoiceListItem />
           </div>
         </div>
 
