@@ -20,7 +20,7 @@ const InvoiceDetails = () => {
             Partial payment
           </span>
         </div>
-        <div className="flex w-3/5 gap-5">
+        <div className="flex w-full md:w-3/5 gap-5 flex-wrap md:flex-nowrap mt-5 md:mt-0">
           <Button variant="outline" label="Download as pdf" />
 
           <Button variant="primary" label="Send invoice" />
@@ -38,14 +38,14 @@ const InvoiceDetails = () => {
           <InvoiceNote />
         </div>
 
-        <div className="p-10 flex-1">
+        <div className="p-0 md:p-5 flex-1">
           <div className="flex items-center justify-between">
             <h4 className="font-medium text-[20px] text-[##373B47]">
               Invoice Activity
             </h4>
           </div>
 
-          <div className="flex flex-col gap-6 mt-5">
+          <div className="flex flex-col gap-10 mt-5">
             <InvoiceActivity />
             <InvoiceActivity />
             <InvoiceActivity />
@@ -63,7 +63,7 @@ export default InvoiceDetails;
 const InvoiceSender = () => {
   return (
     <div className="rounded-3xl p-10 bg-[#FCDDEC] flex flex-col gap-10">
-      <div className="flex items-start justify-between">
+      <div className="flex items-start justify-between flex-wrap">
         <div>
           <p className="uppercase text-[10px] text-[#697598] font-semibold tracking-widest">
             Sender
@@ -82,7 +82,7 @@ const InvoiceSender = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="mt-10 md:mt-0">
           <p className="uppercase text-[10px] text-[#697598] font-semibold tracking-widest">
             Customer
           </p>
@@ -98,7 +98,7 @@ const InvoiceSender = () => {
           Invoice details
         </p>
 
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between flex-wrap gap-y-2">
           <div>
             <p className="text-sm text-[10px] uppercase text-[#697598]">
               Invoice no
@@ -209,7 +209,7 @@ const InvoiceItem = ({
   total: string;
 }) => {
   return (
-    <div className="grid grid-cols-5 gap-10">
+    <div className="grid md:grid-cols-5 gap-10 border-b border-b-gray-200 md:border-0 pb-10 md:p-0">
       <div className="col-span-2">
         <p className="font-medium">{itemName}</p>
         {itemDesc && <p className="text-[#666F77] text-xs">{itemDesc}</p>}
