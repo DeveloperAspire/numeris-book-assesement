@@ -1,6 +1,11 @@
 import Button from "@/components/common/Button";
 import InvoiceActivity from "../InvoiceActivity";
 import Company from "@/assets/svg/company.svg";
+import {
+  Popover as AppPopover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 
 const InvoiceDetails = () => {
   return (
@@ -26,10 +31,8 @@ const InvoiceDetails = () => {
             label="Download as pdf"
             textColor="#003EFF"
           />
-
           <Button variant="primary" label="Send invoice" />
-
-          <Button variant="outline" label="More" />
+          <Popover />
         </div>
       </div>
 
@@ -295,3 +298,25 @@ const InvoiceNote = () => {
     </div>
   );
 };
+
+export function Popover() {
+  return (
+    <AppPopover>
+      <PopoverTrigger asChild>
+        <div className="w-full md:w-1/2">
+          <Button variant="outline" label="More" />
+        </div>
+      </PopoverTrigger>
+      <PopoverContent className="w-full md:w-full shadow-none rounded-2xl p-5">
+        <div className="flex flex-col gap-4">
+          <p className="text-[10px] font-semibold  uppercase text-[#697598] tracking-widest">
+            Duplicate invoice
+          </p>
+          <p className="text-[10px] font-semibold tracking-widest uppercase text-[#697598]">
+            Get sharable link
+          </p>
+        </div>
+      </PopoverContent>
+    </AppPopover>
+  );
+}
