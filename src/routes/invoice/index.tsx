@@ -13,7 +13,7 @@ const Invoice = () => {
     <div className="px-9 py-4 overflow-auto h-full">
       <Header />
 
-      <div className="flex items-center justify-between mt-10">
+      <div className="flex items-center justify-between mt-10 flex-wrap">
         <h3 className="font-medium text-[28px] text-[##373B47]">Invoice</h3>
         <div className="flex w-2/5 gap-10">
           <Button variant="outline" label="See what's new" />
