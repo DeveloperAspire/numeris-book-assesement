@@ -10,12 +10,12 @@ import InvoiceListItem from "@/components/fragments/InvoiceListItem";
 
 const Invoice = () => {
   return (
-    <div className="px-9 py-4 overflow-auto h-full">
+    <div className="px-4 md:px-9 py-4 overflow-auto h-full">
       <Header />
 
-      <div className="flex items-center justify-between mt-10 flex-wrap">
+      <div className="flex items-center justify-between mt-10 flex-wrap gap-8 md:gap-0">
         <h3 className="font-medium text-[28px] text-[#373B47]">Invoice</h3>
-        <div className="flex w-2/5 gap-10">
+        <div className="flex w-full md:w-2/5 gap-10">
           <Button variant="outline" label="See what's new" />
 
           <Button variant="primary" label="Create" />
@@ -75,14 +75,14 @@ const Invoice = () => {
         </div>
       </div>
 
-      <section className="grid grid-cols-3 gap-10">
-        <div className="mt-10 rounded-2xl bg-white p-10 flex-1 col-span-2">
-          <div className="flex items-center justify-between">
+      <section className="md:grid md:grid-cols-3 gap-10">
+        <div className="mt-10 rounded-2xl bg-white p-6 md:p-10 flex-1 col-span-2">
+          <div className="flex items-center justify-between flex-wrap gap-4 md:gap-0 mb-10 md:mb-0">
             <h4 className="font-medium text-[20px] text-[#373B47]">
               Recent Invoices
             </h4>
 
-            <div className="w-2/6">
+            <div className=" w-full md:w-2/6">
               <Button
                 variant="outline"
                 label="View all invoices"
@@ -110,7 +110,7 @@ const Invoice = () => {
           </div>
         </div>
 
-        <div className="mt-10 rounded-2xl bg-white p-10 flex-1">
+        <div className="mt-10 rounded-2xl bg-white p-6 md:p-10 flex-1">
           <div className="flex items-center justify-between">
             <h4 className="font-medium text-[20px] text-[##373B47]">
               Recent Activities

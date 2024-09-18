@@ -25,7 +25,7 @@ const InvoiceListItem = () => {
           </div>
           <div>
             <p className="uppercase text-[16px] font-medium">$1,311,750.12</p>
-            <span className="uppercase text-[#129043] font-medium text-xs rounded-full p-2 px-3 bg-[#E6FFF0] border border-[#12904333]">
+            <span className="uppercase text-[#129043] font-medium text-xs rounded-full p-2 px-3 bg-[#E6FFF0] border border-[#12904333] mt-2">
               paid
             </span>
           </div>

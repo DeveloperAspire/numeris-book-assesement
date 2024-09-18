@@ -15,7 +15,7 @@ const InvoiceAction: React.FC<IInvoiceAction> = ({
 }) => {
   return (
     <div
-      className="bg-white p-10 rounded-3xl flex flex-col gap-4 flex-1"
+      className="bg-white p-10 rounded-3xl flex flex-col gap-4 w-full md:flex-1"
       style={{ backgroundColor: bgColor }}
     >
       {icon}
