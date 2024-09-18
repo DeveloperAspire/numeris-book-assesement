@@ -268,7 +268,7 @@ const PaymentInfo = () => {
       <p className="uppercase text-[10px] text-[#697598] font-semibold tracking-widest">
         Payment information
       </p>
-      <div className="flex items-center justify-between flex-wrap mt-2 gap-x-14 gap-y-4">
+      <div className="flex items-center justify-between flex-wrap mt-2 gap-x-14 gap-y- ">
         <div>
           <p className="text-sm text-[10px] uppercase text-[#697598]">
             Account name
@@ -295,7 +295,7 @@ const PaymentInfo = () => {
         </div>
       </div>
 
-      <div className="flex items-center flex-wrap mt-3 gap-x-14">
+      <div className="flex items-center flex-wrap mt-3 gap-x-14gap-y-3">
         <div>
           <p className="text-sm text-[10px] uppercase text-[#697598]">
             bank address
@@ -305,10 +305,10 @@ const PaymentInfo = () => {
           </p>
         </div>
         <div>
-          <p className="text-sm text-[10px] uppercase text-[#697598]">
+          <p className="text-sm text-[10px] uppercase text-[#697598] text-left">
             account number
           </p>
-          <p className="font-semibold text-[10px]">USD ($)</p>
+          <p className="font-semibold text-[10px] text-right">USD ($)</p>
         </div>
       </div>
     </div>
