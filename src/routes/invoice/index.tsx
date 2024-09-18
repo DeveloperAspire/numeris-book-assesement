@@ -14,7 +14,7 @@ const Invoice = () => {
       <Header />
 
       <div className="flex items-center justify-between mt-10 flex-wrap">
-        <h3 className="font-medium text-[28px] text-[##373B47]">Invoice</h3>
+        <h3 className="font-medium text-[28px] text-[#373B47]">Invoice</h3>
         <div className="flex w-2/5 gap-10">
           <Button variant="outline" label="See what's new" />
 
@@ -50,7 +50,7 @@ const Invoice = () => {
       </div>
 
       <div className="mt-10">
-        <h3 className="font-medium text-[20px] text-[##373B47]">
+        <h3 className="font-medium text-[20px] text-[#373B47]">
           Invoice Actions
         </h3>
 
@@ -78,7 +78,7 @@ const Invoice = () => {
       <section className="grid grid-cols-3 gap-10">
         <div className="mt-10 rounded-2xl bg-white p-10 flex-1 col-span-2">
           <div className="flex items-center justify-between">
-            <h4 className="font-medium text-[20px] text-[##373B47]">
+            <h4 className="font-medium text-[20px] text-[#373B47]">
               Recent Invoices
             </h4>
 
@@ -121,11 +121,13 @@ const Invoice = () => {
             </div>
           </div>
 
-          <InvoiceActivity />
-          <InvoiceActivity />
-          <InvoiceActivity />
-          <InvoiceActivity />
-          <InvoiceActivity />
+          <div className="flex flex-col gap-6 mt-5">
+            <InvoiceActivity />
+            <InvoiceActivity />
+            <InvoiceActivity />
+            <InvoiceActivity />
+            <InvoiceActivity />
+          </div>
         </div>
       </section>
     </div>
