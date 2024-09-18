@@ -95,18 +95,48 @@ const Invoice = () => {
             <p className="uppercase text-[12px] font-medium tracking-widest	">
               today - 27th November, 2022
             </p>
-
-            <InvoiceListItem />
-            <InvoiceListItem />
+            <InvoiceListItem
+              invoiceNumber="1023494 - 2304"
+              amount="$1,311,750.12"
+              status="paid"
+              date="May 19th 2024"
+            />
+            <InvoiceListItem
+              invoiceNumber="1023494 - 2304"
+              amount="$1,311,750.12"
+              status="overdue"
+              date="May 19th 2024"
+            />
           </div>
           <div>
             <p className="uppercase text-[12px] font-medium tracking-widest	">
               8th december, 2022
             </p>
+            <InvoiceListItem
+              invoiceNumber="1023494 - 2304"
+              amount="$1,311,750.12"
+              status="draft"
+              date="May 19th 2024"
+            />
 
-            <InvoiceListItem />
-            <InvoiceListItem />
-            <InvoiceListItem />
+            <InvoiceListItem
+              invoiceNumber="1023494 - 2304"
+              amount="$1,311,750.12"
+              status="overdue"
+              date="May 19th 2024"
+            />
+            <InvoiceListItem
+              invoiceNumber="1023494 - 2304"
+              amount="$1,311,750.12"
+              status="pending"
+              date="May 19th 2024"
+            />
+            <InvoiceListItem
+              invoiceNumber="1023494 - 2304"
+              amount="$1,311,750.12"
+              status="paid"
+              date="May 19th 2024"
+            />
           </div>
         </div>
 
