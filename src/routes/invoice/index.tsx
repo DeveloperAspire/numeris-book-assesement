@@ -5,11 +5,12 @@ import Button from "@/components/common/Button";
 import Header from "@/components/common/Header/Header";
 import AnalyticsCard from "@/components/fragments/AnalyticsCard";
 import InvoiceAction from "@/components/fragments/InvoiceAction";
+import InvoiceActivity from "@/components/fragments/InvoiceActivity";
 import InvoiceListItem from "@/components/fragments/InvoiceListItem";
 
 const Invoice = () => {
   return (
-    <div className="px-9 py-4 overflow-auto">
+    <div className="px-9 py-4 overflow-auto h-full">
       <Header />
 
       <div className="flex items-center justify-between mt-10">
@@ -74,8 +75,8 @@ const Invoice = () => {
         </div>
       </div>
 
-      <section className="flex gap-10">
-        <div className="mt-10 rounded-2xl bg-white p-10 flex-1">
+      <section className="grid grid-cols-3 gap-10">
+        <div className="mt-10 rounded-2xl bg-white p-10 flex-1 col-span-2">
           <div className="flex items-center justify-between">
             <h4 className="font-medium text-[20px] text-[##373B47]">
               Recent Invoices
@@ -119,6 +120,12 @@ const Invoice = () => {
               <Button variant="outline" label="View all" textColor="#003EFF" />
             </div>
           </div>
+
+          <InvoiceActivity />
+          <InvoiceActivity />
+          <InvoiceActivity />
+          <InvoiceActivity />
+          <InvoiceActivity />
         </div>
       </section>
     </div>

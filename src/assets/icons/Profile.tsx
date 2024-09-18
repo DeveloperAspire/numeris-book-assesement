@@ -1,8 +1,14 @@
-const Profile = () => {
+const Profile = ({
+  width = "80",
+  height = "80",
+}: {
+  width?: string;
+  height?: string;
+}) => {
   return (
     <svg
-      width="80"
-      height="80"
+      width={width}
+      height={height}
       viewBox="0 0 80 80"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
