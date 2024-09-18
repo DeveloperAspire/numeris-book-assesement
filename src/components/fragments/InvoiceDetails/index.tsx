@@ -25,6 +25,7 @@ const InvoiceDetails = () => {
             Partial payment
           </span>
         </div>
+
         <div className="flex w-full md:w-3/5 gap-5 flex-wrap md:flex-nowrap mt-5 md:mt-0">
           <Button
             variant="outline"
@@ -36,6 +37,13 @@ const InvoiceDetails = () => {
         </div>
       </div>
 
+      <div className="flex mt-5 rounded-3xl bg-white px-5 py-4 md:py-2 border border-[#E3E6EF] items-center gap-10 flex-wrap">
+        <p className="uppercase text-[10px] text-[#697598] tracking-widest text-center">
+          Reminders
+        </p>
+        <ToggleGroupDemo />
+      </div>
+
       <section className="grid gap-10 md:grid-cols-[1fr] lg:grid-cols-[1fr_480px]">
         <div className="mt-10 rounded-3xl bg-white p-5 border border-[#E3E6EF]">
           <InvoiceSender />
@@ -45,7 +53,7 @@ const InvoiceDetails = () => {
           <InvoiceNote />
         </div>
 
-        <div className="p-0 md:p-5 flex-1">
+        <div className="p-0 md:p-5 flex-1 mt-10">
           <div className="flex items-center justify-between">
             <h4 className="font-medium text-[20px] text-[##373B47]">
               Invoice Activity
@@ -318,5 +326,39 @@ export function Popover() {
         </div>
       </PopoverContent>
     </AppPopover>
+  );
+}
+
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
+
+export function ToggleGroupDemo() {
+  return (
+    <ToggleGroup type="multiple" className="gap-5 my-5 flex-wrap">
+      <ToggleGroupItem value="14-days" aria-label="14 days" className="">
+        <div>
+          <p>14 days before due date</p>
+        </div>
+      </ToggleGroupItem>
+      <ToggleGroupItem value="7-days" aria-label="7 days">
+        <div>
+          <p>7 days before due date</p>
+        </div>
+      </ToggleGroupItem>
+      <ToggleGroupItem value="3-days" aria-label="3 days">
+        <div>
+          <p>3 days before due date</p>
+        </div>
+      </ToggleGroupItem>
+      <ToggleGroupItem value="24-hr" aria-label="24 hours">
+        <div>
+          <p>24 hours before due date</p>
+        </div>
+      </ToggleGroupItem>
+      <ToggleGroupItem value="dueday" aria-label="due date">
+        <div>
+          <p>On the due date</p>
+        </div>
+      </ToggleGroupItem>
+    </ToggleGroup>
   );
 }
