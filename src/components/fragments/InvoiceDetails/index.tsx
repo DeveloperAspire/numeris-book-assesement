@@ -8,7 +8,6 @@ import {
 } from "@/components/common/Popover";
 import { ToggleGroup, ToggleGroupItem } from "@/components/common/ToggleGroup";
 
-
 const InvoiceDetails = () => {
   return (
     <div className="overflow-auto">
@@ -79,7 +78,7 @@ export default InvoiceDetails;
 
 const InvoiceSender = () => {
   return (
-    <div className="rounded-3xl p-10 bg-[#FCDDEC] flex flex-col gap-10">
+    <div className="rounded-3xl p-5 md:p-10 bg-[#FCDDEC] flex flex-col gap-10">
       <div className="flex items-start justify-between flex-wrap">
         <div>
           <p className="uppercase text-[10px] text-[#697598] font-semibold tracking-widest">
@@ -117,25 +116,19 @@ const InvoiceSender = () => {
 
         <div className="flex items-center justify-between flex-wrap gap-y-2">
           <div>
-            <p className="text-sm text-[10px] uppercase text-[#697598]">
-              Invoice no
-            </p>
+            <p className="text-[10px] uppercase text-[#697598]">Invoice no</p>
             <p className="font-semibold text-[10px]">1023902390</p>
           </div>
           <div>
-            <p className="text-sm text-[10px] uppercase text-[#697598]">
-              Issue date
-            </p>
+            <p className="text-[10px] uppercase text-[#697598]">Issue date</p>
             <p className="font-semibold text-[10px]">March 30th, 2023</p>
           </div>
           <div>
-            <p className="text-sm text-[10px] uppercase text-[#697598]">
-              Due date
-            </p>
+            <p className="text-[10px] uppercase text-[#697598]">Due date</p>
             <p className="font-semibold text-[10px]">May 19th, 2023</p>
           </div>
           <div>
-            <p className="text-sm text-[10px] uppercase text-[#697598]">
+            <p className="text-[10px] uppercase text-[#697598]">
               Billing currency
             </p>
             <p className="font-semibold text-[10px]">USD ($)</p>
