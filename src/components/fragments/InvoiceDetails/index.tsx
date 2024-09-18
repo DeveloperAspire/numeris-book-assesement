@@ -268,7 +268,7 @@ const PaymentInfo = () => {
       <p className="uppercase text-[10px] text-[#697598] font-semibold tracking-widest">
         Payment information
       </p>
-      <div className="flex items-center justify-between flex-wrap mt-2 gap-x-14 gap-y- ">
+      <div className="flex items-center justify-between flex-wrap mt-2 gap-x-14 gap-y-5 mb-2 md:mb-0 ">
         <div>
           <p className="text-sm text-[10px] uppercase text-[#697598]">
             Account name
