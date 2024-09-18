@@ -22,13 +22,15 @@ const Button: React.FC<IButton> = ({
   return (
     <button
       className={cn([
-        textColor,
         variantClass[variant],
         className,
         "h-[60px] w-full rounded-full",
       ])}
     >
-      <p className="uppercase font-medium tracking-wider text-[12px]">
+      <p
+        className="uppercase font-semibold tracking-wider text-[12px]"
+        style={{ color: textColor }}
+      >
         {label}
       </p>
     </button>

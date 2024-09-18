@@ -21,7 +21,11 @@ const InvoiceDetails = () => {
           </span>
         </div>
         <div className="flex w-full md:w-3/5 gap-5 flex-wrap md:flex-nowrap mt-5 md:mt-0">
-          <Button variant="outline" label="Download as pdf" />
+          <Button
+            variant="outline"
+            label="Download as pdf"
+            textColor="#003EFF"
+          />
 
           <Button variant="primary" label="Send invoice" />
 
