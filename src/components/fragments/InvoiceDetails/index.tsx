@@ -276,36 +276,28 @@ const PaymentInfo = () => {
           <p className="font-semibold text-[10px]">Numeris Book</p>
         </div>
         <div>
-          <p className="text-sm text-[10px] uppercase text-[#697598]">
-            account number
-          </p>
+          <p className="text-[10px] uppercase text-[#697598]">account number</p>
           <p className="font-semibold text-[10px]">2345657566</p>
         </div>
         <div>
-          <p className="text-sm text-[10px] uppercase text-[#697598]">
-            Ach routing no
-          </p>
+          <p className="text-[10px] uppercase text-[#697598]">Ach routing no</p>
           <p className="font-semibold text-[10px]">M19474756</p>
         </div>
         <div>
-          <p className="text-sm text-[10px] uppercase text-[#697598]">
-            Bank Name
-          </p>
+          <p className="text-[10px] uppercase text-[#697598]">Bank Name</p>
           <p className="font-semibold text-[10px]">Chase City</p>
         </div>
       </div>
 
       <div className="flex items-center flex-wrap mt-3 gap-x-14gap-y-3">
         <div>
-          <p className="text-sm text-[10px] uppercase text-[#697598]">
-            bank address
-          </p>
+          <p className="text-[10px] uppercase text-[#697598]">bank address</p>
           <p className="font-semibold text-[10px]">
             7, Livington road, old road avenue, USA
           </p>
         </div>
         <div>
-          <p className="text-sm text-[10px] uppercase text-[#697598] text-left">
+          <p className="text-[10px] uppercase text-[#697598] text-left">
             account number
           </p>
           <p className="font-semibold text-[10px] text-right">USD ($)</p>
