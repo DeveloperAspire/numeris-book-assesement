@@ -1,5 +1,5 @@
 import Sidebar from "@/components/fragments/Sidebar";
-import { Outlet } from "react-router-dom";
+// import { Outlet } from "react-router-dom";
 import Invoice from "./invoice";
 
 function Root() {

@@ -3,7 +3,7 @@ import {
   AlertDialogCancel,
   AlertDialogContent,
   AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
+} from "@/components/common/AlertDialog";
 import InvoiceDetails from "../InvoiceDetails";
 
 const InvoiceListItem = ({

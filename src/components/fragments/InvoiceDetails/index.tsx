@@ -5,7 +5,9 @@ import {
   Popover as AppPopover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover";
+} from "@/components/common/Popover";
+import { ToggleGroup, ToggleGroupItem } from "@/components/common/ToggleGroup";
+
 
 const InvoiceDetails = () => {
   return (
@@ -328,8 +330,6 @@ export function Popover() {
     </AppPopover>
   );
 }
-
-import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 
 export function ToggleGroupDemo() {
   return (
