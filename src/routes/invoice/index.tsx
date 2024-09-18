@@ -152,11 +152,30 @@ const Invoice = () => {
           </div>
 
           <div className="flex flex-col gap-6 mt-5">
-            <InvoiceActivity />
-            <InvoiceActivity />
-            <InvoiceActivity />
-            <InvoiceActivity />
-            <InvoiceActivity />
+            <InvoiceActivity
+              title="Invoice creation"
+              date="Today, 12:20 PM"
+              action="Created invoice"
+              activity="00239434/Olaniyi Ojo Adewale"
+            />
+            <InvoiceActivity
+              title="Invoice creation"
+              date="Today, 12:20 PM"
+              action="Created invoice"
+              activity="00239434/Olaniyi Ojo Adewale"
+            />
+            <InvoiceActivity
+              title="Invoice creation"
+              date="Today, 12:20 PM"
+              action="Created invoice"
+              activity="00239434/Olaniyi Ojo Adewale"
+            />
+            <InvoiceActivity
+              title="Invoice creation"
+              date="Today, 12:20 PM"
+              action="Created invoice"
+              activity="00239434/Olaniyi Ojo Adewale"
+            />
           </div>
         </div>
       </section>

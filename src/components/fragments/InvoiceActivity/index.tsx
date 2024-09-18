@@ -1,6 +1,16 @@
 import UserImg from "@/assets/svg/man.svg";
 
-const InvoiceActivity = () => {
+const InvoiceActivity = ({
+  title,
+  date,
+  action,
+  activity,
+}: {
+  title: string;
+  date: string;
+  action: string;
+  activity: string;
+}) => {
   return (
     <div className="flex items-start gap-5">
       <div className="h-10 w-10 rounded-full overflow-hidden">
@@ -8,17 +18,13 @@ const InvoiceActivity = () => {
       </div>
       <div className="flex flex-col gap-2">
         <div>
-          <p className="text-[16px] font-semibold text-[#000000]">You</p>
-          <p className="text-[#697598] text-[14px] font-medium">
-            Today, 12:20 PM
-          </p>
+          <p className="text-[16px] font-semibold text-[#000000]">{title}</p>
+          <p className="text-[#697598] text-[14px] font-medium">{date}</p>
         </div>
         <div className="bg-[#F6F8FA] p-4 rounded-xl">
           <p className="text-[#697598] text-[14px] font-medium">
-            Created invoice{" "}
-            <span className="text-[#000000] font-medium">
-              00239434/Olaniyi Ojo Adewale
-            </span>
+            {action}
+            <span className="text-[#000000] font-medium ml-2">{activity}</span>
           </p>
         </div>
       </div>

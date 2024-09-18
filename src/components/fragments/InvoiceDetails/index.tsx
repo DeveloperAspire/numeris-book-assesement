@@ -60,13 +60,37 @@ const InvoiceDetails = () => {
               Invoice Activity
             </h4>
           </div>
-
           <div className="flex flex-col gap-10 mt-5">
-            <InvoiceActivity />
-            <InvoiceActivity />
-            <InvoiceActivity />
-            <InvoiceActivity />
-            <InvoiceActivity />
+            <InvoiceActivity
+              title="You"
+              date="Today, 12:20 PM"
+              action="Created invoice"
+              activity="00239434/Olaniyi Ojo Adewale"
+            />
+            <InvoiceActivity
+              title="You"
+              date="Today, 12:20 PM"
+              action="Sent invoice"
+              activity="00239434/Olaniyi Ojo Adewale to Olaniyi Ojo Adewale"
+            />
+            <InvoiceActivity
+              title="Payment Confirmed"
+              date="Today, 12:20 PM"
+              action="You manually confirmed a partial payment of"
+              activity="$2,000,000"
+            />
+            <InvoiceActivity
+              title="Payment Confirmed"
+              date="Today, 12:20 PM"
+              action="You manually confirmed a full payment of"
+              activity="$6,000,000"
+            />
+            <InvoiceActivity
+              title="You"
+              date="Today, 12:20 PM"
+              action="Sent invoice"
+              activity="00239434/Olaniyi Ojo Adewale to Olaniyi Ojo Adewale"
+            />
           </div>
         </div>
       </section>
