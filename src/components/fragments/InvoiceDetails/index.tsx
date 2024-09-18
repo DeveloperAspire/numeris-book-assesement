@@ -270,7 +270,7 @@ const PaymentInfo = () => {
       </p>
       <div className="flex items-center justify-between flex-wrap mt-2 gap-x-14 gap-y-5 mb-2 md:mb-0 ">
         <div>
-          <p className="text-sm text-[10px] uppercase text-[#697598]">
+          <p className="text-[10px] uppercase text-[#697598]">
             Account name
           </p>
           <p className="font-semibold text-[10px]">Numeris Book</p>
